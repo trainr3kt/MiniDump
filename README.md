@@ -1,6 +1,6 @@
 # Minidump
 
-C# implementation of mimikatz/pypykatz minidump functionality to get credentials from LSASS dumps.
+C# implementation of mimikatz/pypykatz minidump functionality to get credentials from LSASS using minidumpwritedump and parse the results in memory.
 
 ![poc](Images/poc.png)
 
@@ -9,8 +9,7 @@ C# implementation of mimikatz/pypykatz minidump functionality to get credentials
 ### Usage
 
 ```
-procdump64.exe -ma lsass.exe lsass.dmp
-C:\minidump.exe lsass.dmp
+execute-assembly minidump.exe 
 ```
 
 
@@ -45,8 +44,9 @@ C:\minidump.exe lsass.dmp
 
 ## Acknowledgements
 
-Minidump is based on the following projects and the work by the creators
+Modified version of Minidump is based on the following projects and the work by the creators
 
+* [MiniDump](https://github.com/cube0x0/MiniDump) by [Cube0x0](https://twitter.com/cube0x0)
 * [pypykatz](https://github.com/skelsec/pypykat) by [skelsec](https://twitter.com/SkelSec)
 * [mimikatz](https://github.com/gentilkiwi/mimikatz/) by [gentilkiwi](https://twitter.com/gentilkiwi)
 * [sharpkatz](https://github.com/b4rtik/SharpKatz) by [b4rtik](https://twitter.com/b4rtik)
